@@ -1,0 +1,93 @@
+# org-profile.yaml — single source of truth for a governance-kit rollout.
+# The rollout skill fills this from an interview, then renders every plugin from it.
+# Keep this file after deployment: to update the kit, edit here and re-render.
+# Use "TBD" for anything unknown; the skill will list TBDs as blockers, not guess.
+
+org:
+  name: ""                 # {{ORG_NAME}}
+  slug: ""                 # short kebab name for output dir / zip (e.g. acme-health)
+  description: ""          # {{ORG_DESCRIPTION}} — one line
+
+compliance:
+  regime: ""               # {{COMPLIANCE_REGIME}} — e.g. "HIPAA/HITECH", "PCI-DSS v4.0"
+  regulated_data_type: ""  # {{REGULATED_DATA_TYPE}} — PHI / cardholder data / PII / CUI
+  regulated_data_examples: ""        # {{REGULATED_DATA_EXAMPLES}}
+  breach_notification_window: ""     # {{BREACH_NOTIFICATION_WINDOW}}
+  obligations:             # {{COMPLIANCE_OBLIGATION_1/2/3}}
+    - ""
+    - ""
+    - ""
+  regulated_handling_rules:          # {{REGULATED_HANDLING_RULE_1/2}}
+    - ""
+    - ""
+
+domains:
+  primary: ""              # {{PRIMARY_DOMAINS}}
+  affiliated: ""           # {{AFFILIATED_DOMAINS}}
+  vendor: ""               # {{VENDOR_DOMAINS}}
+  lookalike_tld_example: ""          # {{LOOKALIKE_TLD}}
+
+classification:            # used as {{DATA_CLASSES}} and {{TIER_n_*}} — keep consistent
+  tiers:                   # least → most sensitive; add/remove to match your scheme
+    - name: ""             # {{TIER_1_NAME}}
+      definition: ""       # {{TIER_1_DEF}}
+      examples: ""         # {{TIER_1_EXAMPLES}}
+    - name: ""             # {{TIER_2_NAME}}
+      definition: ""
+      examples: ""
+    - name: ""             # {{TIER_3_NAME}}
+      definition: ""
+      examples: ""
+    - name: ""             # {{TIER_4_NAME}}
+      definition: ""
+      examples: ""
+  low_tier_rule: ""        # {{LOW_TIER_RULE_1}}
+  high_tier_rules:         # {{HIGH_TIER_RULE_1/2}}
+    - ""
+    - ""
+  restricted_identifiers: ""         # {{RESTRICTED_IDENTIFIERS}}
+  retention_rule: ""       # {{RETENTION_RULE}}
+
+systems:
+  approved_for_sensitive: ""         # {{APPROVED_SYSTEMS}}
+  approved_channels: ""    # {{APPROVED_CHANNELS}}
+  prohibited: ""           # {{PROHIBITED_SYSTEMS}}
+  approved_secret_channels: ""       # {{APPROVED_SECRET_CHANNELS}}
+  secure_share_method: ""  # {{SECURE_SHARE_METHOD}}
+  external_sharing_approval: ""      # {{EXTERNAL_SHARING_APPROVAL}}
+
+acceptable_use:
+  encouraged_uses:         # {{ENCOURAGED_USE_1/2}}
+    - ""
+    - ""
+  prohibited_uses:         # {{PROHIBITED_USE_1/2}}
+    - ""
+    - ""
+  regulated_advice_roles: ""         # {{REGULATED_ADVICE_ROLES}}
+  comms_approver: ""       # {{COMMS_APPROVER}}
+  commitment_approver: ""  # {{COMMITMENT_APPROVER}}
+  people_decision_rule: ""           # {{PEOPLE_DECISION_RULE}}
+  recordkeeping_rule: ""   # {{RECORDKEEPING_RULE}}
+  ai_disclosure_rule: ""   # {{AI_DISCLOSURE_RULE}}
+
+incident:
+  reporting_mechanism: ""  # {{REPORTING_MECHANISM}}
+  urgent_criteria: ""      # {{URGENT_CRITERIA}}
+  preservation_rule: ""    # {{PRESERVATION_RULE}}
+  safety_concern_examples: ""        # {{SAFETY_CONCERN_EXAMPLES}}
+
+contacts:
+  security_soc: ""         # {{SECURITY_CONTACT}}
+  privacy_compliance: ""   # {{PRIVACY_CONTACT}}
+  it_helpdesk: ""          # {{IT_CONTACT}}
+  safety_hr: ""            # {{SAFETY_CONTACT}}
+  phishing_report: ""      # {{PHISHING_REPORT_CHANNEL}}
+  incident_hotline: ""     # {{INCIDENT_HOTLINE}}
+  policy_owner: ""         # {{POLICY_CONTACT}}
+
+rollout:
+  plugins:                 # which to deploy (rollout-assistant is excluded from output)
+    - org-security-context
+    - data-handling
+    - acceptable-use
+    - incident-escalation

@@ -1,0 +1,8 @@
+{
+  "name": "data-handling",
+  "version": "0.1.0",
+  "description": "Teaches agents how to classify, store, transmit, redact, retain, and share organizational data according to local policy. Covers classification tiers, DLP-awareness, external-sharing rules, and redaction. Use when an agent reads, summarizes, moves, exports, or shares any document or data. Customize the placeholders before deploying.",
+  "version_note": "Template plugin intended to be customized per-organization before rollout.",
+  "author": { "name": "Customize before deployment" },
+  "keywords": ["data-handling", "classification", "dlp", "redaction", "retention", "governance"]
+}

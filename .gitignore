@@ -1,0 +1,23 @@
+# Rendered, customized per-organization output — may contain real org data. Never commit.
+dist/
+
+# A filled-in profile may contain an organization's contacts, domains, and systems.
+# The TEMPLATE lives at plugins/rollout-assistant/skills/rollout/references/org-profile.template.yaml
+# and IS tracked; a working copy named org-profile.yaml is not.
+org-profile.yaml
+org-profile.yml
+
+# Packaged artifacts
+*.zip
+*.plugin
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

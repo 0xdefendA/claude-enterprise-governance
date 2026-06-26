@@ -1,0 +1,7 @@
+{
+  "name": "rollout-assistant",
+  "version": "0.1.0",
+  "description": "Interviews an administrator for their organization's details and renders a deployment-ready, customized copy of the governance starter kit — filling every placeholder, replacing examples with real values, and validating the result. Use when setting up, customizing, configuring, or rolling out the Claude Enterprise governance starter kit for an organization or client. ADMIN TOOL: run during rollout; do not deploy this plugin to end users.",
+  "author": { "name": "Claude Enterprise Starter Kit" },
+  "keywords": ["rollout", "customize", "setup", "interview", "governance", "deployment"]
+}

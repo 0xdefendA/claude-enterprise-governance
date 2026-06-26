@@ -1,0 +1,8 @@
+{
+  "name": "incident-escalation",
+  "version": "0.1.0",
+  "description": "Gives agents a stop-and-report protocol for the organization: how to recognize a reportable situation (phishing, exposed secret, possible data disclosure, security or safety concern), what to do before the irreversible step, and exactly whom to escalate to. Use whenever the agent suspects a security, privacy, or safety incident, or a request that conflicts with policy. Customize the placeholders before deploying.",
+  "version_note": "Template plugin intended to be customized per-organization before rollout.",
+  "author": { "name": "Customize before deployment" },
+  "keywords": ["incident-response", "escalation", "reporting", "security", "governance"]
+}
