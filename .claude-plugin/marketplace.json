@@ -1,9 +1,11 @@
 {
   "name": "claude-enterprise-governance",
   "owner": {
-    "name": "CUSTOMIZE: your organization or team name",
-    "url": "https://example.com"
+    "name": "0xdefenda",
+    "url": "https://github.com/0xdefenda"
   },
+  "homepage": "https://github.com/0xdefenda/claude-enterprise-governance",
+  "repository": "https://github.com/0xdefenda/claude-enterprise-governance",
   "metadata": {
     "version": "0.1.0",
     "description": "A governance baseline for organizations rolling out Claude Enterprise. Customizable template skills covering org security context, data handling, acceptable use, and incident escalation. Fill in the placeholders, then publish to your managed plugin source."
@@ -13,35 +15,35 @@
       "name": "org-security-context",
       "version": "0.1.0",
       "description": "Gives agents organization-specific security context: approved domains, sanctioned systems, the controlling compliance regime, escalation contacts, and incident procedures. Ships with HIPAA/PHI and PCI-DSS worked examples.",
-      "author": { "name": "CUSTOMIZE before deployment" },
+      "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
       "source": "./plugins/org-security-context"
     },
     {
       "name": "data-handling",
       "version": "0.1.0",
       "description": "Teaches agents how to classify, store, transmit, and share organizational data according to local policy: classification tiers, DLP-awareness, redaction, retention, and external-sharing rules. Ships with a worked example.",
-      "author": { "name": "CUSTOMIZE before deployment" },
+      "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
       "source": "./plugins/data-handling"
     },
     {
       "name": "acceptable-use",
       "version": "0.1.0",
       "description": "Defines appropriate and prohibited uses of the AI assistant for the organization: what to delegate, what requires human review, and guardrails around regulated advice, confidential data, and record-keeping. Ships with a worked example.",
-      "author": { "name": "CUSTOMIZE before deployment" },
+      "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
       "source": "./plugins/acceptable-use"
     },
     {
       "name": "incident-escalation",
       "version": "0.1.0",
       "description": "Gives agents a stop-and-report protocol: how to recognize a reportable situation, what to do before the irreversible step, and exactly whom to escalate to. Ships with a worked example.",
-      "author": { "name": "CUSTOMIZE before deployment" },
+      "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
       "source": "./plugins/incident-escalation"
     },
     {
       "name": "rollout-assistant",
       "version": "0.1.0",
       "description": "ADMIN TOOL — interviews you and renders a deployment-ready, customized copy of the governance plugins for a specific organization. Run this during rollout; do not deploy it to end users.",
-      "author": { "name": "Claude Enterprise Starter Kit" },
+      "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
       "source": "./plugins/rollout-assistant"
     }
   ]

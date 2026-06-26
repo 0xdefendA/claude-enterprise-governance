@@ -4,7 +4,8 @@
   "description": "Gives agents organization-specific security and compliance context: approved domains, escalation contacts, data classification and handling rules, and the controlling compliance regime (e.g. HIPAA/PHI, PCI-DSS). Use when an agent handles email, browses the web, processes documents, or touches regulated or sensitive data on behalf of the organization. Customize the placeholders before deploying.",
   "version_note": "Template plugin intended to be customized per-organization before rollout.",
   "author": {
-    "name": "Customize before deployment"
+    "name": "0xdefenda",
+    "url": "https://github.com/0xdefenda"
   },
   "keywords": [
     "security",

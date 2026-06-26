@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "description": "Defines appropriate and prohibited uses of the AI assistant for the organization: what to delegate, what requires human review, and guardrails around regulated advice, confidential data, automated decisions, and record-keeping. Use at the start of tasks that could carry legal, financial, HR, or compliance weight. Customize the placeholders before deploying.",
   "version_note": "Template plugin intended to be customized per-organization before rollout.",
-  "author": { "name": "Customize before deployment" },
+  "author": { "name": "0xdefenda", "url": "https://github.com/0xdefenda" },
   "keywords": ["acceptable-use", "aup", "ai-policy", "governance", "human-review"]
 }
