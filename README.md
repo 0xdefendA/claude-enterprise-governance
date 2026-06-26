@@ -1,6 +1,6 @@
 # Claude Enterprise Governance Kit
 
-A curated set of **customizable template skills** for organizations rolling out Claude
+A curated set of **customizable security governance template skills** for organizations rolling out Claude
 Enterprise. Claude Enterprise ships the platform but no opinionated baseline of skills;
 every org starts from a blank page. This repo gives you a governance floor to start
 from — fill in the placeholders, pilot, and publish to your managed plugin source.
@@ -102,7 +102,7 @@ runs at the end of a customization also serves as a CI gate. A GitHub Actions wo
 - **One per regime or business unit.** Orgs with multiple data types (e.g. PHI *and*
   PCI) can maintain separate customized copies or merge the relevant sections.
 - **Pair with controls.** Keep DLP, secret scanning, and access controls doing the
-  enforcement; this kit is the policy/behavior layer.
+  enforcement; this kit is only the *policy/behavior layer*.
 
 ## Extending the kit
 
@@ -115,9 +115,9 @@ guidance, and an approved-tools/connector map.
 
 Threat-recognition framing draws on the structure of curated community skills such as
 Trail of Bits' `skills-curated` and 1Password's `security-awareness`. This kit focuses
-on the complementary, org-specific governance layer.
+on the complementary, org-specific governance layer to save you from having to create one from scratch, or omitting entirely. 
 
 ## Contributing & License
 
 See `CONTRIBUTING.md` for the template/placeholder conventions and the validation gate.
-Licensed under the MIT License (`LICENSE`) — set the copyright holder before publishing.
+Licensed under the MIT License (`LICENSE`)
